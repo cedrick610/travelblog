@@ -1,0 +1,597 @@
+body {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 50vh 15vh 100vh auto 30vh auto 8vh;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "temple temple "
+        "populaire voyage"
+        "avion avion"
+        "logos logos"
+        "footer footer";
+    font-family: 'RocknRoll One', sans-serif;
+
+
+}
+
+header {
+    height: auto;
+    grid-area: header;
+    background-image: url(image/beach.jpg);
+    background-size: cover;
+    background-position: bottom;
+    color: white;
+
+
+}
+
+
+
+
+nav {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 90%;
+    background-color: #f2f7ba;
+    grid-area: nav;
+    justify-content: center;
+
+
+
+}
+
+
+
+navigationLinks {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #2b80b9;
+    list-style: none;
+
+
+}
+
+
+#navigationLinks {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+#hamburger,
+#navbarTitle {
+    display: none;
+
+}
+
+
+#navigationLinks a {
+    align-self: center;
+    justify-self: center;
+
+    color: #2b80b9;
+    text-decoration: none;
+
+
+}
+
+
+
+#temples {
+
+    grid-area: temple;
+    background-image: url(image/bali.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 5vw repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-attachment: fixed;
+
+}
+
+#Bali {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #2b80b9;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 10px;
+    align-items: center;
+    grid-row: 2;
+    grid-column: 2;
+    font-family: 'RocknRoll One', sans-serif;
+    border-radius: 15px;
+    justify-content: center;
+
+
+}
+
+
+
+
+#Bali utilisateur {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+
+}
+
+
+#Bali a {
+
+    padding: 3px;
+    background-color: #f2f7ba;
+    color: #2b80b9;
+    border: 1px solid white;
+    border-radius: 1px;
+
+}
+
+#Bali h1 {
+    color: white;
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+#Bali h2 {
+    color: white;
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+#Bali h3 {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    font-family: 'RocknRoll One', sans-serif;
+
+}
+
+#Bali p {
+    text-align: center;
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+
+
+
+#populaires {
+    grid-area: populaire;
+    background-color: #2b80b9;
+    color: white;
+    font-family: 'RocknRoll One', sans-serif;
+
+}
+
+
+.carte {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #f2f7ba;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #f2f7ba;
+    margin: 10px;
+    width: 95%;
+
+
+}
+
+
+.imgpopulaire {
+    width: 60%;
+    border: 3px solid white;
+    margin: 20px 0px;
+
+
+
+}
+
+.carte a {
+    padding: 10px;
+    background-color: #f2f7ba;
+    color: #2b80b9;
+    border: 1px solid white;
+    border-radius: 5px;
+
+}
+
+
+
+.utilisateur {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+
+}
+
+.utilisateur img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+
+}
+
+
+#grandVoyage {
+    grid-area: voyage;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 90px;
+    width: 30%;
+    align-items: center;
+
+}
+
+#grandVoyage h3 {
+    text-align: center;
+    color: #2b80b9;
+    margin: 20px;
+
+}
+
+#grandVoyage a {
+    padding: 10px;
+    background-color: #f2f7ba;
+    color: #2b80b9;
+    border: 1px solid white;
+    border-radius: 5px;
+
+
+}
+
+#imggrandVoyage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    align-items: center;
+}
+
+#imggrandVoyage img {
+
+    width: 15vw;
+    height: 10vw;
+}
+
+.imgarticles {
+    width: 35vw;
+
+
+}
+
+
+#grandVoyage a {
+    padding: 10px;
+    background-color: #f2f7ba;
+    color: #2b80b9;
+    border: 1px solid white;
+    border-radius: 5px;
+
+}
+
+.utilisateur p {
+    text-align: center;
+}
+
+#Decouvremontreal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.Decouvremontreal h3 {
+    color: #2b80b9;
+}
+
+
+#imgdecouvremontreal img {
+    width: 30vw;
+    height: 30vw;
+
+}
+
+#Decouvremontreal img {
+    height: 10vw;
+    width: 10vw;
+}
+
+
+.Decouvremontreal a {
+    padding: 10px;
+    background-color: #f2f7ba;
+    color: #2b80b9;
+    border: 1px solid white;
+    border-radius: 5px;
+
+}
+
+.escapade a {
+    padding: 10px;
+    background-color: #f2f7ba;
+    color: #2b80b9;
+    border: 1px solid white;
+    border-radius: 5px;
+
+}
+
+
+.escapade h3 {
+    color: #2b80b9;
+}
+
+.routerio a {
+    padding: 10px;
+    background-color: #f2f7ba;
+    color: #2b80b9;
+    border: 1px solid white;
+    border-radius: 5px;
+
+}
+
+.routerio h3 {
+    color: #2b80b9;
+}
+
+
+#avion {
+    grid-area: avion;
+    background-image: url(image/plane.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+#avion h2 {
+    padding: 20px;
+    border-bottom: 2px solid #f2f7ba;
+
+}
+
+#avion h4 {
+    color: white;
+}
+
+
+
+#logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+    width: auto;
+    grid-area: logos;
+    background-color: #2b80b9;
+
+}
+
+.imagelogos {
+    width: 8%;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #f2f7ba;
+    height: 90%;
+    grid-area: footer;
+    align-items: center;
+    padding: 10px;
+
+}
+
+#footer h4 {
+    color: #2b80b9;
+}
+
+#footer ul {
+    display: flex;
+    flex-direction: row;
+    color: #2b80b9;
+    justify-content: space-evenly;
+    list-style: none;
+
+}
+
+
+
+img {
+    width: 100%;
+}
+
+
+h1 {
+    text-align: center;
+    font-family: 'RocknRoll One', sans-serif;
+
+}
+
+h2 {
+    text-align: center;
+    font-family: 'RocknRoll One', sans-serif
+}
+
+
+
+
+#ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #2b80b9;
+}
+
+#id populaires {
+    display: grid;
+}
+
+/* grid-template-columns: ; */
+
+
+
+
+
+@media screen and (max-width: 991px) {
+    #hamburger {
+        display: block;
+        text-align: left;
+    }
+
+    #navbarTitle {
+        display: block;
+        margin: auto;
+    }
+
+    #hamburgerAndTitle {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 80vw;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        height: 15vh;
+    }
+
+    #temples {
+        
+    grid-area: temple;
+    background-image: url(image/bali.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 5vw repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    background-attachment: fixed;
+
+
+    
+    }
+
+
+ 
+    
+
+
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+
+
+    body {
+
+
+        grid-template-rows: 50vh 100vh auto 30vh auto 8vh;
+        grid-template-columns: 50vw 1fr;
+        grid-template-areas:
+            "header header"
+            "temple temple"
+            "populaire voyage"
+            "avion avion"
+            "logos logos"
+            "footer footer"
+
+
+
+
+
+    }
+
+
+
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        margin: 0;
+        display: grid;
+        grid-template-rows: 50vh 100vh auto auto 50vh 50vh auto;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "temple"
+            "voyage"
+            "populaire"
+            "avion"
+            "logos"
+            "footer";
+        font-family: 'RocknRoll One', sans-serif;
+
+    }
+
+    #logos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    #grandVoyage {
+        display: grid;
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    .imgarticles {
+        display: grid;
+        justify-content: center;
+    }
+
+
+    .compagnylogos1{
+        width: 80%;
+    }
+    #Bali{
+
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: #2b80b9;
+        border: 1px solid white;
+        border-radius: 5px;
+        margin: 10px;
+        align-items: center;
+        grid-row: 3;
+        grid-column: 2;
+        font-family: 'RocknRoll One', sans-serif;
+        border-radius: 15px;
+        justify-content: center;
+    
+    
+    }
+
+
+
+
+
+
+ }
+
+    
+    
+
+
+
