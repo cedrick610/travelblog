@@ -216,7 +216,7 @@ navigationLinks {
 .utilisateur img {
     height: 30px;
     width: 30px;
-    border-radius: 50%;
+    border-radius: 10px;
 
 }
 
@@ -231,7 +231,7 @@ navigationLinks {
 
 }
 
-#grandVoyage h3 {
+#grandVoyage h3{
     text-align: center;
     color: #2b80b9;
     margin: 20px;
@@ -259,10 +259,14 @@ navigationLinks {
 
     width: 15vw;
     height: 10vw;
+    margin-right: 20px;
+    border-radius: 15px;
 }
 
-.imgarticles {
+.imgarticles img{
     width: 35vw;
+    border-radius: 10px;
+
 
 
 }
@@ -290,6 +294,7 @@ navigationLinks {
 
 .Decouvremontreal h3 {
     color: #2b80b9;
+    text-align: center;
 }
 
 
